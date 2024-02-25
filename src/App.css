@@ -1,0 +1,184 @@
+:root{
+  --orange:#F66B2E;
+  --yellow: #F3AE36;
+  --black: #121212;
+  --white: #FBFBFB;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+  min-height: 100vh;
+  min-width: 100vw;
+}
+
+#root{
+  min-height: 100vh;
+  min-width: 100vw;
+  background-color: var(--orange);
+}
+
+.app{
+  padding-bottom: 200px;
+  min-height: 100vh;
+  width: 70%;
+  margin:auto;
+}
+
+
+.home-page{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 200px;
+}
+
+h1{
+  font-size: 30px;
+  font-weight: 700;
+  color: var(--white);
+}
+
+h2{
+  font-size: 24px;
+  font-weight: 700;
+  color: var(--white);
+
+}
+
+h3{
+  margin-top:0;
+  font-size: 20px;
+  font-weight: 500;
+  color: var(--white);
+
+}
+
+
+h4{
+  margin-top:0;
+
+  font-size: 16px;
+  font-weight: 500;
+  color: var(--white);
+
+}
+
+p{
+  font-size: 14px;
+  font-weight: 400;
+  color: var(--white);
+  
+
+}
+
+.logo{
+  text-align: center;
+  margin-bottom: 100px;
+}
+
+
+.horizontal-line{
+  width: 360px;
+  height: 5px;
+  margin-top: -15px;
+  color: var(--white);
+  background-color: var(--white);
+}
+
+
+.flex-row{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 100px;
+}
+
+.flex-column{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.large-image{
+  height: 400px;
+  width: 400px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.small-image{
+  height: 250px;
+  width: 250px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.grid-1x2{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 50px;
+}
+
+.primary-button{
+  padding: 10px 20px;
+  border: none;
+  border-radius: 20px;
+  background-color: var(--yellow);
+  color: var(--white);
+  font-size: 16px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.primary-button:hover{
+  background-color: var(--white);
+  color: var(--orange);
+}
+
+.contact-area{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 20px;
+  margin-top: 100px;
+}
+
+
+@media screen and (max-width: 768px){
+  .app{
+    width: 90%;
+  }
+
+  .home-page{
+    gap: 100px;
+  }
+
+  .flex-row{
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+  }
+
+  .grid-1x2{
+    grid-template-columns: 1fr;
+  }
+
+  .large-image{
+    height: 300px;
+    width: 300px;
+  }
+
+  .small-image{
+    height: 200px;
+    width: 200px;
+  }
+
+  .contact-area{
+    gap: 10px;
+  }
+  
+}
